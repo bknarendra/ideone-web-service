@@ -29,7 +29,7 @@ public class Ideone {
 		  while((temp=in.readLine())!=null)
 			input=input+"\n"+temp;
           in.close();
-          Object []languages=service.getLanguages("geniush","geniush159zxc");
+          Object []languages=service.getLanguages("your ideone username","your ideone password");
           HashMap <String,HashMap> lang=(HashMap)languages[0];
 		  System.out.println(lang);
 		  DataInputStream userin=new DataInputStream(System.in);
