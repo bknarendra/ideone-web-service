@@ -35,7 +35,7 @@ public class Ideone {
 		  DataInputStream userin=new DataInputStream(System.in);
 		  System.out.println("Enter your language choice : ");
 		  int ch=Integer.parseInt(userin.readLine());
-          Object sub[]=service.createSubmission("geniush","geniush159zxc",code,ch,input,Boolean.TRUE,Boolean.FALSE);
+          Object sub[]=service.createSubmission("your ideone username","your ideone password",code,ch,input,Boolean.TRUE,Boolean.FALSE);
 
           HashMap <String,String> subm=(HashMap)sub[0];
           String link="";
@@ -48,7 +48,7 @@ String output="",cmpinfo="",stderr="";
 while(result!=15)
 {
 	Thread.sleep(20);
-          Object subdet[]=service.getSubmissionDetails("geniush","geniush159zxc",link,Boolean.FALSE,Boolean.TRUE,Boolean.TRUE,Boolean.TRUE,Boolean.TRUE);
+          Object subdet[]=service.getSubmissionDetails("your ideone username","your ideone password",link,Boolean.FALSE,Boolean.TRUE,Boolean.TRUE,Boolean.TRUE,Boolean.TRUE);
           HashMap <String,Object> subdetls=(HashMap)subdet[0];
           result=((Integer)subdetls.get("result")).intValue();
           time=((Float)subdetls.get("time")).floatValue();
